@@ -3,7 +3,7 @@
 // ------------------------------------------------Kilometer To Meter-------------------------------------------
 
 function kilometerToMeter(km){
-    if(km>0){
+    if(km>=0){
         return km*1000;
     }
     else{
@@ -14,7 +14,14 @@ function kilometerToMeter(km){
 
 // ------------------------------------------------Budget Calculator-------------------------------------------
 
-
+function budgetCalculator(watch,mobile,laptop){
+    if(watch>=0&&mobile>=0&&laptop>=0){
+        return (watch*50)+(mobile*100)+(laptop*500);
+    }
+    else{
+        return "Enter valid value for watch,mobile and laptop";
+    }
+}
 
 
 
@@ -25,3 +32,4 @@ function kilometerToMeter(km){
 // ------------------------------------------------Function Checker-------------------------------------------
 
 console.log(kilometerToMeter(-2));
+console.log(budgetCalculator(2,0,-1));
