@@ -22,7 +22,26 @@ function budgetCalculator(watch,mobile,laptop){
         return "Enter valid value for watch,mobile and laptop";
     }
 }
-
+// ------------------------------------------------Hotel Cost-------------------------------------------
+function hotelCost(days){
+    if(days<0){
+        return "Number of days must be a positive value";
+    }
+    else if(days<=10){
+        var cost=days*100;
+        return cost;
+    }
+    else if(days<=20){
+        var cost10=10*100;
+        var remainingDays=days-10;
+        return cost10+ remainingDays*80;
+    }
+    else{
+        var cost20= 10*100+10*80;
+        var remainingDays= days-20;
+        return cost20+remainingDays*50;
+    }
+}
 
 
 
@@ -33,3 +52,4 @@ function budgetCalculator(watch,mobile,laptop){
 
 console.log(kilometerToMeter(-2));
 console.log(budgetCalculator(2,0,-1));
+console.log(hotelCost(-2));
