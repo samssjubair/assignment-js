@@ -98,8 +98,8 @@ function megaFriend(friends){
 console.log(kilometerToMeter(2.4));                                         //kilometer to meter
 console.log(budgetCalculator(2,0,2));                                       //budget calculator
 
-cost=hotelCost(13);
-console.log(cost);                                                          //hotel cost
+let resultCost=hotelCost(-13);
+console.log(resultCost);                                                          //hotel cost
 
-var friendsArray=["Abir","Radiq salal","    Samsss                    ", "shanto","Faltu","Kalamu"];
+let friendsArray=["Abir","Rafiq salam","    Samsss                    ", "shanto","Faltu","Kalamu"];
 console.log(megaFriend(friendsArray));                                      //mega friend
