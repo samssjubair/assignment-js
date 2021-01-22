@@ -95,11 +95,11 @@ function megaFriend(friends){
 
 // ------------------------------------------------Function Calling-----------------------------------------------------
 
-console.log(kilometerToMeter(2.4));
-console.log(budgetCalculator(2,0,2));
+console.log(kilometerToMeter(2.4));                                         //kilometer to meter
+console.log(budgetCalculator(2,0,2));                                       //budget calculator
 
 cost=hotelCost(13);
-console.log(cost);
+console.log(cost);                                                          //hotel cost
 
 var friendsArray=["Abir","Radiq salal","    Samsss                    ", "shanto","Faltu","Kalamu"];
-console.log(megaFriend(friendsArray));
+console.log(megaFriend(friendsArray));                                      //mega friend
